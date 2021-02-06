@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body { font-family: 'Roboto', sans-serif;
+font-size: 14px;
+font-weight: 400;
+color: #242325;
+}
+
+.nav {
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+}
+
+.menu a {
+    clear: left;
+    text-decoration: none;
+    color: #242325;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 22px;
+    line-height: 70px;
+    display: none;
+    width: 37px;
+    float: left;
+}
+
+#toggle {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+   color:#242325;
+}
+
+a:visited {
+    color:#242325;
+}
+
+a:hover {
+    color: #7A777E;
+}
+
+a:active {
+    color: #AD8D71;
+}
+
+
+@media only screen and (max-width: 768px) {
+    html, body {
+        height: 100%;
+    }
+    
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+        cursor: pointer;
+    }
+
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+        overflow: hidden;
+        position: relative;
+        background-color: #fff;
+    }
+
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEBEA;
+        margin: 0;
+    }
+
+    #toggle:checked + .menu {
+        display: block;
+    }
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        text-transform: uppercase;
+        margin: 20px 10px 10px 20px;
+        margin-bottom: -52px;
+        margin-right: 20px;
+        float: right;
+        font-weight: 400;
+    }
+
+
+    h2 {
+        font-size: 20px;
+        font-weight: 500;
+        margin-top: 20px;
+        margin-bottom: 18px;
+    }
+
+    p {
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+
+    .material-icons {
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-style: normal;
+        font-size: 17px;
+        padding-left: 8px;
+        margin-top: 3px;
+      }
+    
+
+    .main {
+        padding: 20px;
+        flex: 1 0 auto;
+    }
+
+    .main-content {
+        margin-top: 20px;
+        z-index: 1;
+    }
+
+    .rectangle {
+        position: relative;
+        background-color: #242325;
+        margin-top: -116px;
+        margin-left: 50px;
+        width: 285px;
+        height: 158px;
+        z-index: 2;
+    }
+
+    .headshot {
+        position: absolute;
+        border-radius: 100px;
+        margin-top: -117px;
+        margin-left: 96px;
+        z-index: 3;
+    }
+
+    h3 {
+        font-weight: 500;
+        position: absolute;
+        color: #F9F6F1;
+        margin-top: -123px;
+        margin-left: 190px;
+        z-index: 3;
+    }
+    
+    h4 {
+        font-size: 13px;
+        position: absolute;
+        color: #F9F6F1;
+        margin-top: -89px;
+        margin-left: 190px;
+        z-index: 3;
+    }
+
+    hr {
+        position: absolute;
+        width: 230px;
+        height: 0px;
+        border: 1px solid #F9F6F1;
+        margin-top: -49px;
+        margin-left: 78px;
+        z-index: 2;
+    }
+
+    h5 {
+        position: absolute;
+        color: #F9F6F1;
+        z-index: 3;
+        margin-top: -28px;
+        margin-left: 104px;
+    }
+
+    .footer  {
+        flex-shrink: 0;
+        padding: 20px;
+    }
+
+    .footer p {
+        text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    header {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between; 
+        } 
+
+    h1 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        padding: 20px;
+    }
+    
+    h2 {
+        font-size: 20px;
+        margin-top: 200px;
+    }
+    
+    main {
+        display: flex;
+        justify-content: space-between;
+        padding: 50px;
+        margin-left: 146px;
+    }
+    
+    
+    p {
+        width: 330px;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    a {
+
+    }
+    
+    .material-icons {
+      font-family: 'Material Icons';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 15px;
+      position: absolute;
+      padding-left: 10px;
+    }
+    
+    .headshot {
+        position: absolute;
+        border-radius: 100px;
+        margin-top: 436px;
+        margin-left: -318px;
+        z-index: 3;
+    }
+    
+    hr {
+        position: absolute;
+        width: 240px;
+        height: 0px;
+        left: 664px;
+        top: 740px;
+        border: 1px solid #F9F6F1;
+        margin-top: -114px;
+        margin-left: 224px;
+        z-index: 2;
+    }
+    
+    .rectangle {
+        position: absolute;
+        background-color: #242325;
+        margin-top: 400px;
+        margin-left: 672px;
+        width: 282px;
+        height: 158px;
+        z-index: 2;
+    }
+    
+    .main-content {
+        margin-top: 20px;
+        z-index: 1;
+    }
+    
+    h3 {
+        font-weight: 500;
+        position: absolute;
+        color: #F9F6F1;
+        margin-top: 434px;
+        margin-left: -218px;
+        z-index: 3;
+    }
+    
+    h4 {
+        font-size: 13px;
+        position: absolute;
+        color: #F9F6F1;
+        margin-top: 468px;
+        margin-left: -218px;
+        z-index: 3;
+    }
+    
+    h5 {
+        position: absolute;
+        color: #F9F6F1;
+        z-index: 3;
+        margin-top: 525px;
+        margin-left: -307px;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer p {
+        font-size: 12px;
+    }
+}
